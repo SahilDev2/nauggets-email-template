@@ -5,9 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <title>Nauggets Email-templet</title>
+    <title>Nauggets Email-template</title>
 
 </head>
 <style type="text/css">
@@ -31,12 +33,15 @@
     }
 
     .wrapper {
-        width: 100%;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
         background-color: #F4F4F4;
         table-layout: fixed;
-        padding-bottom: 200px;
+        /* padding-bottom: 200px; */
         text-align: center;
-        
+        height: auto;
+
     }
 
     .main {
@@ -77,12 +82,16 @@
         padding-left: 65px;
         padding-right: 65px;
         opacity: 0.5;
-
-
     }
 
     .welcome-img {
         text-align: center;
+
+    }
+
+    .std-fnt-weight {
+        font-weight: 100;
+        /* opacity: 0.9; */
 
     }
 
@@ -95,44 +104,50 @@
         text-align: center;
         /* width: 100%; */
         max-width: 200px;
-
-
-
     }
 
     .column {
         max-width: 600px;
-
-
+        padding-left: 20px;
+    
 
     }
 
     .two-columns .column {
         width: 100%;
-        max-width: 300px;
+        max-width: 240px;
 
     }
 
-    .line-height{
-       line-height:1.6
+
+
+    .line-height {
+        line-height: 1.6
     }
 
+    .align-center {
+        text-align: center;
+    }
+
+    .std-fnt-size {
+        font-size: 20px;
+    }
 </style>
 
 <body style="font-family: Poppins; font-size: 22px;">
     <center class="wrapper">
 
-        <table class="main" style="padding: 0px;">
+        <table class="main">
             <tr>
 
                 <td style="padding: 50px  0px  50px">
-                    <table class="logo-column" width="100%" style="top: 67px;">
+                    <table class="logo-column" width="100%" style="top: 67px; border-collapse: collapse;">
                         <tr>
-                            <td>
-                                <a href="/">
+                            <td class="align-center">
+                            
                                     <img alt="Nauggets logo" title="Nauggets logo" width="129"
-                                        src="./Assets/NauggetsLogo.svg">
-                                </a>
+                                        src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/logo.png">
+                                
                             </td>
                         </tr>
                     </table>
@@ -140,79 +155,87 @@
             </tr>
             <tr>
                 <td class="welcome-column">
-                    <h3>WELCOME TO THE FAM</h3>
+                    <h3 style=" margin-top:0px; margin-bottom: 10px; font-size: 42px;">WELCOME TO THE FAM</h3>
                 </td>
             </tr>
             <tr>
-                <td class="welcome-para">
-                    <p class="line-height">Hey , Welcome to Nauggets,
+                <td class="welcome-para std-fnt-size" style="padding-top:-10px; opacity: 0.7;">
+                    <p class="line-height std-fnt-weight std-fnt-size">Hey , Welcome to Nauggets,
                         Your online gold marketplace where you can buy save and spend physical gold.
                     </p>
                 </td>
             </tr>
             <tr>
                 <td class="welcome-img">
-                    <img src="./Assets/Smartphone-dark-mockup-06.png" alt="Smartphone-dark-mockup-06">
+                    <img src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/welcome-phone.png"
+                        alt="Smartphone-dark-mockup-06">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <h4 style="color: #AD00AD;opacity: 0.7;">THE NAUGGETS STORY</h4>
+                <td class="align-center">
+                    <p style="color: #AD00AD;opacity: 1; margin-bottom: 1px; font-size: 27px; font-weight: bold;">THE
+                        NAUGGETS STORY</p>
                 </td>
             </tr>
-            <tr >
-                <td style="padding-bottom: 20px">
-                    <p  class = "line-height"style=" padding:0px 30px 0px; font-size: 15px; opacity: 0.5;">Gold has always been awesome - we
+            <tr>
+                <td class=" align-center std-fnt-weight std-fnt-size line-height" style="padding: 0px 30px 30px 30px;  ">
+                    <p class="line-height" style=" opacity: 0.7; ">Gold has always
+                        been awesome - we
                         just
                         made it easy. We developed a global online gold marketplace where you can purchase gold with
                         zero commissions. Our goal is to make gold accessible for the ‘rest of us’. We always keep it
                         simple and promise
                         no hidden fee or catches!
                     </p>
-                        <p style=" padding:0px 30px 0px; font-size: 15px; opacity: 0.5;"> We hope you enjoy following our journey as much as we enjoy creating
+                    <p style=" padding:0px 30px 0px; opacity: 0.7;"> We hope you enjoy following our
+                        journey as much as we enjoy creating
                         it.</p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <table width="100%"
-                        style="max-width: 600px; text-align: center; padding-left:70px ; padding-right: 2px"
+                    <table width="100%" 
+                        style="max-width: 600px; text-align: center; padding-left:90px; padding-right: auto ; font-size: 18px;" 
                         class="story-icon-column">
                         <tr>
                             <td class="two-columns">
                                 <table class="column" width=100%>
 
                                     <tr>
-                                        <td>
-                                            <a href="#">
-                                                <img src="./Assets/bank.svg" alt="bank-icon">
+                                        <td class="align-center">
 
-                                            </a>
+                                            <img src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/icon-bank.png"
+                                            
+                                                alt="bank-icon">
+
+
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <p style="font: normal normal 600 15px/20px RNS Sanz; padding-top: 0px; ;">
-                                                Open a free Nauggets account &<code
-                                                    style=" color:#25D366;font: normal normal 600 15px/20px RNS Sanz;"> buy gold with zero commissions</code>
-                                            </p>
+                                        <td style="max-width: 100px;" class="align-center ">
+                                            <h4>
+                                                Open a free Nauggets account &<code 
+                                                    style=" color:#25D366;font: normal normal 600 18px/20px RNS Sanz;"> buy gold with zero commissions</code>
+                                            </h4>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                             <td>
 
-                                <table class="column" width=100%>
+                                <table class="column"  width = 100% style=" max-width: 200px;">
                                     <tr>
-                                        <td><a href="#"><img src="./Assets/gold-money-forex.svg" alt="bank-icon"></a>
+                                        <td class="align-center"><img
+                                                src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/icon-earn.png"
+                                                alt="bank-icon">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <p style="font: normal normal 600 15px/20px RNS Sanz;">
+                                        <td style="margin-left:auto">
+                                            <h4>
                                                 Earn up to <code
-                                                    style="color: #25D366;font: normal normal 600 15px/20px RNS Sanz;">% bonus rewards</code>
-                                            </p>
+                                                    style="color: #25D366;font: normal normal 600 18px/20px RNS Sanz;">% bonus rewards</code>
+                                            </h4>
                                         </td>
                                     </tr>
                                 </table>
@@ -220,19 +243,20 @@
                         </tr>
                         <tr>
                             <td class="two-columns">
-                                <table class="column" width="100%">
+                                <table class="column" width="100%" >
                                     <tr>
-                                        <td><a href="#"><img src="./Assets/Group 13180.svg" alt="Group"></a></td>
+                                        <td><img src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/icon-grow.png"
+                                                alt="Group"></td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <p style="font: normal normal 600 15px/20px RNS Sanz;">
+                                            <h4>
                                                 Start with as little as $10 &
                                                 <code
-                                                    style="color:#25D366; font: normal normal 600 15px/20px RNS Sanz;">
+                                                    style="color:#25D366; font: normal normal 600 18px/20px RNS Sanz;">
                                                 watch your savings grow
                                             </code>
-                                            </p>
+                                            </h4>
 
 
                                         </td>
@@ -241,18 +265,18 @@
                             </td>
                             <td>
 
-                                <table class="column"  width="100%">
+                                <table class="column" width="100%" style=" max-width: 200px;">
                                     <tr>
-                                        <td><a href="#"><img src="./Assets/icon-virtual-accounts.4208d893.png"
-                                                    alt="icon-virtual-accounts"></a></td>
+                                        <td><img src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/icon-virtual.png"
+                                                alt="icon-virtual-accounts"></td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <p style="font: normal normal 600 15px/20px RNS Sanz;">
+                                        <td >
+                                            <h4>
                                                 <code
-                                                    style="color:#25D366; font: normal normal 600 15px/20px RNS Sanz;"> Virtual accounts</code>
+                                                    style="color:#25D366; font: normal normal 600 18px/20px RNS Sanz;"> Virtual accounts</code>
                                                 coming soon
-                                            </p>
+                                            </h4>
                                         </td>
                                     </tr>
                                 </table>
@@ -262,146 +286,173 @@
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p style="color: #AD00AD; font-size: 27px">OUR PROMISE</p>
+                <td class="align-center" style="padding-top: 15px;">
+                    <p style="color: #AD00AD; font-weight: bold;font-size: 27px; margin-bottom: 20px;">OUR PROMISE</p>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p style="font-size: 15px; padding:0px 30px; text-align: center; opacity: 0.5;"  class="line-height">
+                <td style=" padding:0px 30px;" class="std-fnt-size line-height align-center">
+                    <p style="justify-self: start; opacity: 0.7; margin-top: 0px;" class="">
                         We encourage you to save for your future while we save and reforest the environment. With the
                         help of our incredible partners at One Tree Planted we will plant a tree on your behalf for
                         every activated Nauggets account and continue to plant a tree for every $1000 worth of gold you
                         purchase*
                     </p>
-                    <p style="font-size: 15px; padding:0px 30px; text-align: center; opacity: 0.5;"> 
+                    <p style=" padding:0px 30px;  justify-self: start; opacity: 0.7;">
                         You will also be given the chance to earn bonus rewards by doing your part for the
                         environment. Stay tuned!
                     </p>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <img width="100%" src="./Assets/Group 13192.png"alt="Smartphone-dark-mockup-06">
+                <td style="padding-top: 30px; ">
+                    <img width="100%"
+                        src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/our-promise.png"
+                        alt="Smartphone-dark-mockup-06">
                 </td>
 
             </tr>
             <tr>
-                <td>
-                    <p style="font-size: 15px; opacity: 0.5;">*A tree will be planted for every $1000 an
+                <td class="align-center std-fnt-size ">
+                    <p style="opacity: 0.5; margin-top: 0px; margin-bottom: 40px;">*A tree will be planted for every
+                        $1000 an
                         individual buys.</p>
                 </td>
             </tr>
             <tr>
-                <td style="padding:0px 100px 20px 100px;">
+                <td class="align-center"
+                    style="font-size: 24px; font-weight: bold; padding:0px 90px 20px 90px; opacity: 0.7;">
                     <p>YOU ARE NOW ONE STEP
                         CLOSER TO SAVING GOLD.</p>
                 </td>
             </tr>
-            <tr style="background-color: #2B2B2B; ">
+            <tr >
                 <td>
-                    <img width= "100%" src="./Assets/1.png" alt="double phone img" >
+                    <img width="100%"
+                        src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/illustration.png"
+                        alt="double phone img">
                 </td>
             </tr>
-            <tr style="background-color: #2B2B2B;">
-                <td>
-                    <img width="64" src="./Assets/Group 11905.svg" alt="nauggets-logo">
-                </td>
+
+            <td style="background-color: #2B2B2B; top: 0px;">
+                <table style="background-color: #2B2B2B;">
+                    <tr>
+                        <td class="align-center">
+                            <img width="64"
+                                src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/download-app.png"
+                                alt="nauggets-logo">
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr style=" color:#F4F4F4">
+                        <td style="text-align: center;">
+                            <p style=" opacity: 0.9; font-size: 28px; font-weight:bold;">Download the app</p>
+                        </td>
+                    </tr>
+                    <tr style="background-color: #2B2B2B; color: #F4F4F4;">
+                        <td style="padding: 0px 80px;" class="std-fnt-size align-center">
+                            <p style=" padding:0px 30px ; opacity: 0.7; margin-top: 0px;" class="line-height">Our
+                                app makes
+                                buying, selling and gifting
+                                gold that easy, that you’ll wonder why you didn’t do it
+                                sooner!</p>
+                        </td>
+                    </tr>
+                    <tr style="background-color: #2B2B2B;">
+                        <td style="padding : 10px 120px 40px;">
+                            <table width="100%" style="padding: 30px ;">
+                                <tr>
+                                    <td style="padding-right:10px; border-style: none;">
+                                        <table style="border-style: none;">
+                                            <a href="">
+
+                                                <img width="163px"
+                                                    src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/google-play.png"
+                                                    alt="play-store-icon">
+                                            </a>
+
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <a href="#">
+
+                                                <img src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/app-store.png"
+                                                    alt="app-store-icon">
+                                            </a>
+
+                                        </table>
+                                    </td>
+                                </tr>
+
+
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+
             </tr>
-            <tr style="background-color: #2B2B2B; color:#F4F4F4">
-                <td>
-                    <p style=" opacity: 1; font-size: 25px;">Download the app</p>
-                </td>
-            </tr>
-            <tr style="background-color: #2B2B2B; color: #F4F4F4;">
-                <td style="padding: 0px 80px;">
-                    <p style=" padding:0px 30px ;font-size: 15px; opacity: 0.7;" class="line-height">Our app makes buying, selling and gifting
-                        gold that easy, that you’ll wonder why you didn’t do it
-                        sooner!</p>
-                </td>
-            </tr>
-            <tr style="background-color: #2B2B2B;">
-                <td style="padding : 10px 120px 30px;">
-                    <table width="100%" style="padding: 30px ;">
-                        <tr>
-                            <td style="padding-right:10px; border-style: none;">
-                                <table style ="border-style: none;">
-                                    <a href="">
 
-                                        <img width="163px" src="./Assets/Group 12020.svg" alt="">
-                                    </a>
-
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <a href="#">
-
-                                        <img src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/AppStore.svg" alt="app-store-logo">
-                                    </a>
-
-                                </table>
-                            </td>
-                        </tr>
-
-
-                    </table>
-                </td>
-            </tr>
-            
-            
             <tr width="100%" style="text-align: center; max-width: 600px;background-color: #F4F4F4; ">
                 <td>
-                    <p style="font-size: 15px; opacity: 0.5; padding: 30px 70px;" class="line-height">
+                    <p style="font-size: 15px; opacity: 0.6; padding: 30px 70px;" class="line-height ">
                         Lorem ipsum dolor sit amet, consetetur
                         sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
                         dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem</p>
                 </td>
-    
+
             </tr>
-            <tr >
-                <td style="padding-left: 120px; padding-right: 120px; background-color: #F4F4F4;">
-                    <table width=" 100%" style="background-color: #F4F4F4; ">
-                        <tr>
-                            <td>
-                                <a href="#"><img src="./Assets/twitter.svg" alt=""></a>
+            <tr>
+                <td style="padding:0px  120px 0px 110px;  background-color: #F4F4F4;">
+                    <table class="align-center" width=" 100%" style="background-color: #F4F4F4; ">
+                        <tr class="align-center">
+                            <td class="align-center">
+                                <a href="#"><img
+                                        src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/icon-fb.png"
+                                        alt="social-facebook"></a>
                             </td>
-    
-    
-    
-                            <td>
-                                <a href="#"><img src="./Assets/linkedin-rect.svg" alt="linkedin-rect"></a>
-    
+
+
+
+                            <td class="align-center">
+                                <a href="#"><img
+                                        src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/icon-linkedin.png"
+                                        alt="linkedin-rect"></a>
+
                             </td>
-                            <td>
-    
-                                <a href="#"><img src="./Assets/social-facebook.svg" alt="bxl-instagram-alt"></a>
+                            <td class="align-center">
+
+                                <a href="#"><img
+                                        src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/icon-insta.png"
+                                        alt="bxl-instagram-alt"></a>
                             </td>
-                            <td>
-                                <a href="#"><img src="./Assets/bxl-instagram-alt.svg" alt="twitter"></a>
-    
+                            <td class="align-center">
+                                <a href="#"><img
+                                        src="https://nauggets-public-bucket.s3.us-east-2.amazonaws.com/emailer-images/icon-twitter.png"
+                                        alt="twitter"></a>
+
                             </td>
                         </tr>
                     </table>
-    
-    
+
+
             </tr>
             <tr style="background-color: #F4F4F4; ">
-                <td style="padding: 10px 180px;">
-                    <p
-                        style="font: normal normal normal 14px/21px RNS Sanz;letter-spacing: 0px;color: #0B0B0B;opacity: 0.5; ">
+                <td class="align-center" style="padding: 10px 180px;">
+                    <p style="font-size: 15px;letter-spacing: 0px;color: #0B0B0B;opacity: 0.6; ">
                         Address : 564 sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo</p>
                 </td>
             </tr>
             <tr style="background-color: #F4F4F4;">
-                <td>
-                    <p style="opacity: 0.5; cursor: pointer; font-size: 15px;"><code
+                <td class="align-center">
+                    <p style="opacity: 0.6; cursor: pointer; font-size: 16px;"><code
                             style="text-decoration: underline;">Unsubscribe</code> from Nauggets emails.</p>
                 </td>
             </tr>
-            <table class="footer" width="100%" style="text-align: center; max-width: 600px; margin-top: 0px;">
-        </table>
+
 
     </center>
 </body>
